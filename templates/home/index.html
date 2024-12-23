@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madhav Foods</title>
+    <link rel="stylesheet" href="{% static 'CSS/index.css' %}">
+</head>
+<body>
+    <div class="navbar">
+        {% include 'home/navbar.html' %}
+    </div>
+
+    <div class="hero-section-001">
+        <div class="main-a">
+            <div class="support-img">
+                <img src="" class="img-a" alt="">
+                <img src="" class="img-b" alt="">
+                <img src="" class="img-c" alt="">
+                <img src="" class="img-d" alt="">
+            </div>
+            <div class="content">
+                <h1>Taste of Tradition</h1>
+                <h2>MADHAV</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Mollitia eos praesentium ratione repudiandae corrupti et provident perspiciatis ipsam sint sapiente.</p>
+            </div>
+            <div class="main-a-img">
+                <img src="{% static 'assets/Home_img2.png' %}" alt="main-a-img" class="main-a-img-a-left-top">
+                <div class="img-bacgrd"></div>
+                <img src="{% static 'assets/Home-img1.png' %}" alt="main-a-img" class="main-a-img-b">
+                <div class="img-bacgrd-b"></div>
+                <button>Order Now <span>→</span></button>
+            </div>
+        </div>
+
+        {% comment %} Category Section {% endcomment %}
+        <div class="categ-00a">
+            <div class="nav">
+                <h1 class="title">Services</h1>
+                <span>See more <span>→</span></span>
+            </div>
+            <div class="categ-menu">
+                <li>
+                    <h2>Fast Delivery</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolorum vitae deserunt ipsam cumque culpa! Assumenda officiis rem quasi qui.</p>
+                    <div class="number-badge">#1</div>
+                </li>
+                <li>
+                    <h2>Home Made</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolorum vitae deserunt ipsam cumque culpa! Assumenda officiis rem quasi qui.</p>
+                    <div class="number-badge">#2</div>
+                </li>
+                <li>
+                    <h2>Quality Products</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolorum vitae deserunt ipsam cumque culpa! Assumenda officiis rem quasi qui.</p>
+                    <div class="number-badge">#3</div>
+                </li>
+            </div>
+        </div>
+        {% comment %} Category Section {% endcomment %}
+    </div>
+</body>
+</html>

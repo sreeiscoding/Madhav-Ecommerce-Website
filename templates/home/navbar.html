@@ -1,0 +1,91 @@
+{% comment %} Navabr {% endcomment %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'CSS/navbar.css' %}">
+
+<div class="nav-bar-a">
+    <div class="top-menu">
+        <img src="{% static 'assets/Madhav_Logo.png' %}" width="50" height="50" alt="logo" class="logo">
+        <div class="search-box">
+            <input type="search" class="search-prompt" placeholder="Search products here....">
+
+            <div class="search-popup">
+                <div class="overlay"></div>
+                <div class="pop-content">
+                    <input type="search" placeholder="Search Categories & Products here...." class="popup-input">
+                    <img src="" alt="search-icon" class="popup-search-icon">
+                    <h4>Browse By Categories</h4>
+                    <ul>
+                        <li>Mango Roast Pickle</li>
+                        <li>Banana Chips</li>
+                        <li>Health Mix</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <img src="{% static 'assets/search-icon.png' %}" alt="Search-icon" width="25">
+        <div class="icons">
+            <ul>
+                <li>
+                    <img src="{% static 'assets/notification-icon.png' %}" width="25" alt="notification">
+                </li>
+                <div class="mob-icons">
+                    <ul>
+                        <div class="nav-fav-count">0</div>
+                        <li>
+                            <img src="{% static 'assets/favorites-icon.png' %}" width="25" alt="Favorites">
+                        </li>
+                        <li>
+                            <img src="{% static 'assets/shopping-cart.png' %}" width="25" alt="cart">
+                        </li>
+                        <div class="nav-cart-count">0</div>
+                    </ul>
+                </div>
+                <div class="menu-section">
+                    <button id="mob-menu-button">
+                        <img src="" width="45" alt="menu-button">
+                    </button>
+                    <div class="menu-content">
+                        <ul class="menu-cont-list">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Your Orders</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Contact</a></li>
+    
+                            <button>Login</button>
+                        </ul>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="list-menu">
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Your Orders</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+    <ul>
+        <li>
+            <a href="">
+                <img src="" width="25" alt="Favorites">
+            </a>
+        </li>
+        <div class="nav-fav-count"></div>
+        <li>
+            <a href="">
+                <img src="" width="25" alt="cart">
+            </a>
+        </li>
+        <div class="nav-cart-count"></div>
+    </ul>
+
+    <div class="login-app">
+        <button>LogIn</button>
+    </div>
+</div>
+
